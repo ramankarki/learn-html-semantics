@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="raman karki" />
+    <meta name="keywords" content="Define, keywords, for, search, engines" />
+    <meta name="description" content="Define a description of your web page" />
+    <link rel="stylesheet" href="semantics.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="heading">
+        HTML5 Herald
+        <span class="tagline"
+          >Produced With That Good Ol’ Timey HTML5 &amp; CSS3</span
+        >
+      </h1>
+      <nav></nav>
+    </header>
+
+    <main role="main">
+      <div class="primary">
+        <article>
+          <h1>Accessible Web Apps</h1>
+          <p>Lorem ipsum dolor …</p>
+          <p>
+            As you can see in <a href="#fig1">Figure 1</a>,
+            <figure id="fig1">
+              <figcaption>Screen Reader Support for WAI-ARIA</figcaption>
+              <img
+                src="https://dummyimage.com/300x200/000/0011ff&text=figure+1"
+                alt="JAWS: Landmarks 1/1, Forms 4/5"
+              />
+            </figure>
+          </p>
+
+          <p>Lorem ipsum dolor …</p>
+        </article>
+      </div>
+
+      <div class="secondary">
+        <article>
+          <p>This is a <mark>mark</mark> element</p>
+          <h1>Your Task is in Progress</h1>
+          <p>Status: <progress max="100" value="90"></progress></p>
+          <p>
+            Total current disk usage:
+            <meter
+              value="50"
+              min="0"
+              max="320"
+              low="100"
+              high="300"
+              title="gigabytes"
+            >
+              63 GB
+            </meter>
+          </p>
+          <p>
+            We’ll be getting together for our next developer conference on
+            <time datetime="2015-10-12">12 October of this year</time>.
+          </p>
+          <p>
+            This one is <strong>important</strong> word in this sentence and
+            <b>this</b> one too
+          </p>
+          <p>Harry’s Grill is the best <em>burger</em> joint in town.</p>
+          <p>Harry’s Grill <em>is</em> the best burger joint in town.</p>
+          <small>&copy; SitePoint Pty. Ltd.</small>
+          <p>
+            In the words of <cite>Charles Bukowski</cite> -
+            <q
+              >An intellectual says a simple thing in a hard way. An artist says
+              a hard thing in a simple way.</q
+            >
+          </p>
+
+          <dl>
+            <dt>Selector:</dt>
+            <dd>The element(s) targeted.</dd>
+            <dt>Property:</dt>
+            <dd>
+              The feature used to add styling to the targeted element, defined
+              before a colon.
+            </dd>
+            <dt>Value:</dt>
+            <dd>
+              The value given to the specified property, declared after the
+              colon.
+            </dd>
+          </dl>
+
+          <details open="true">
+            <summary>Some Magazines of Note</summary>
+            <ul>
+              <li><cite>Bird Watcher's Digest</cite></li>
+              <li><cite>Rower's Weekly</cite></li>
+              <li><cite>Fishing Monthly</cite></li>
+            </ul>
+          </details>
+
+          <ol type="1" start="5" reversed>
+            <li>Mix flour, baking powder, sugar, and salt.</li>
+            <li>In another bowl, mix eggs, milk, and oil.</li>
+            <li>Stir both mixtures together.</li>
+            <li>Fill muffin tray 3/4 full.</li>
+            <li>Bake for 20 minutes.</li>
+          </ol>
+        </article>
+
+        <picture>
+          <source
+            srcset="https://dummyimage.com/300x200/000/0011ff&text=min+800px"
+            media="(min-width: 800px)"
+          />
+          <img
+            src="https://dummyimage.com/300x200/000/0011ff&text=normal+image"
+            alt=""
+          />
+        </picture>
+
+        <form>
+          <fieldset>
+            <legend>Choose your favorite monster</legend>
+
+            <input type="radio" id="kraken" name="monster" />
+            <label for="kraken">Kraken</label><br />
+
+            <input type="radio" id="sasquatch" name="monster" />
+            <label for="sasquatch">Sasquatch</label><br />
+
+            <input type="radio" id="mothman" name="monster" />
+            <label for="mothman">Mothman</label>
+          </fieldset>
+          <textarea id="story" name="story" rows="5" cols="33">
+            It was a dark and stormy night...
+          </textarea>
+        </form>
+      </div>
+
+      <div class="tertiary">
+        <aside>
+          <article></article>
+        </aside>
+
+        <article></article>
+      </div>
+    </main>
+    <!-- main -->
+
+    <footer>
+      <section id="authors">
+        <section></section>
+      </section>
+
+      <section id="copyright"></section>
+    </footer>
+
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>
